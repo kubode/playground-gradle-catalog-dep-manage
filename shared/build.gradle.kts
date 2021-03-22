@@ -20,6 +20,11 @@ kotlin {
                 implementation(kotlin("test-annotations-common"))
             }
         }
+        val jvmMain by getting {
+            dependencies {
+                implementation("io.reactivex.rxjava3:rxjava")
+            }
+        }
         val jvmTest by getting {
             dependencies {
                 implementation("junit:junit")

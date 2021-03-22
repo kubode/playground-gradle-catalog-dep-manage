@@ -10,6 +10,8 @@ kotlin {
         val commonMain by getting {
             dependencies {
                 implementation(kotlin("stdlib"))
+                implementation("io.ktor:ktor-client")
+                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json")
             }
         }
         val commonTest by getting {
@@ -18,12 +20,14 @@ kotlin {
                 implementation(kotlin("test-annotations-common"))
             }
         }
+        val jvmTest by getting {
+            dependencies {
+                implementation("junit:junit")
+            }
+        }
     }
 }
 
 dependencies {
     commonMainImplementation(platform(project(":platform")))
-    commonMainImplementation("io.ktor:ktor-client")
-    commonMainImplementation("org.jetbrains.kotlinx:kotlinx-serialization-json")
-    "jvmTestImplementation"("junit:junit")
 }

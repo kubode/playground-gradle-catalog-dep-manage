@@ -12,4 +12,5 @@ dependencies {
     constraints {
         api("junit:junit:4.12")
     }
+    api("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
 }

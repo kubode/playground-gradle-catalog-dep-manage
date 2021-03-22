@@ -1,5 +1,6 @@
 plugins {
     kotlin("multiplatform")
+    kotlin("plugin.serialization") version "1.4.30"
 }
 
 kotlin {
@@ -23,5 +24,6 @@ kotlin {
 dependencies {
     commonMainImplementation(platform(project(":platform")))
     commonMainImplementation("io.ktor:ktor-client")
+    commonMainImplementation("org.jetbrains.kotlinx:kotlinx-serialization-json")
     "jvmTestImplementation"("junit:junit")
 }

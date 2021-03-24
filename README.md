@@ -10,7 +10,7 @@ Manages the all of dependencies throwgth project using [Java Platform plugin](ht
 
 ## Pros/Cons
 
-Comparison with dependency management using buildSrc.
+Comparison with dependency management using `buildSrc`.
 
 ### Pros
 

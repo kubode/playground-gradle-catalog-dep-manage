@@ -9,5 +9,5 @@ A sample project managing the dependencies using BoM.
 
 ## Cons
 
-- Needs to declare the dependencies with `String` like `implementation("group.id:artifact-id")`.
-- Needs to add `implementation(platform(project(":platform")))` for each submodule’s `dependencies` block.
+- Needs to declare the dependencies with String like `implementation("group.id:artifact-id”)` on each submodule’s `dependencies` block.
+- Needs to add `implementation(platform(project(":platform")))` on each submodule’s `dependencies` block.

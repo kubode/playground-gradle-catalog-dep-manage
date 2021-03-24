@@ -2,6 +2,12 @@
 
 A sample project managing the dependencies using BoM.
 
+## Architecture
+
+### `:platform`
+
+Manages the all of dependencies throwgth project using [Java Platform plugin](https://docs.gradle.org/current/userguide/java_platform_plugin.html).
+
 ## Pros/Cons
 
 Comparison with dependency management using buildSrc.

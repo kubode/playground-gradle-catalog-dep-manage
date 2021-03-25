@@ -21,7 +21,7 @@ Comparison with dependency management using `buildSrc`.
 
 - Don't need to use `buildSrc` for the dependency management.
 - Don't need to re-compile `buildSrc` sources when the dependencies changed.
-- Dependabot and Renovate works!!
+- Dependabot and Renovate works!! See [PRs](https://github.com/kubode/playground-gradle-bom-dep-manage/pulls).
 
 ### Cons
 

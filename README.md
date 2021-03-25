@@ -2,6 +2,11 @@
 
 A sample project managing the dependencies using BoM.
 
+## 📝
+
+[Centralized dependency versions](https://docs.gradle.org/7.0-rc-1/release-notes.html#centralized-versions) feature will be introduced at Gradle 7.x.
+That may solve all the following issues.
+
 ## Architecture
 
 ### `:platform`

@@ -11,7 +11,7 @@ Comparison with dependency management using `buildSrc`.
 - Type-safe dependency management.
 - Don't need to use `buildSrc` for the dependency management.
 - Don't need to re-compile `buildSrc` sources when the dependencies changed.
-- Renovate works!! See [PRs](https://github.com/kubode/playground-gradle-bom-dep-manage/pulls).
+- Renovate works!! See [PRs](https://github.com/kubode/playground-gradle-catalog-dep-manage/pulls).
 
 ### Cons
 

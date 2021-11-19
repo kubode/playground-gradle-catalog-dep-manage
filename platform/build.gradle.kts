@@ -12,6 +12,6 @@ dependencies {
     constraints {
         api("junit:junit:4.12")
         api("org.jetbrains.kotlinx:kotlinx-serialization-json:1.0.1")
-        api("io.reactivex.rxjava3:rxjava:3.0.0")
+        api("io.reactivex.rxjava3:rxjava:3.1.2")
     }
 }

@@ -21,4 +21,5 @@ kotlinx-serialization = ["kotlinx-serialization-json"]
 kotlin-test = ["kotlin-test-common", "kotlin-test-annotations-common"]
 
 [plugins]
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

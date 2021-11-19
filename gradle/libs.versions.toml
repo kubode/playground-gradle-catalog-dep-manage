@@ -1,0 +1,24 @@
+[versions]
+kotlin = "1.4.30"
+ktor = "1.4.0"
+junit = "4.12"
+kotlinx-serialization = "1.0.1"
+rxjava3 = "3.0.0"
+
+[libraries]
+kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib" }
+kotlin-test-common = { module = "org.jetbrains.kotlin:kotlin-test-common" }
+kotlin-test-annotations-common = { module = "org.jetbrains.kotlin:kotlin-test-annotations-common" }
+ktor-bom = { module = "io.ktor:ktor-bom", version.ref = "ktor" }
+ktor-client = { module = "io.ktor:ktor-client" }
+junit = { module = "junit:junit", version.ref = "junit" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
+rxjava3 = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava3" }
+
+[bundles]
+kotlinx-serialization = ["kotlinx-serialization-json"]
+kotlin-test = ["kotlin-test-common", "kotlin-test-annotations-common"]
+
+[plugins]
+kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

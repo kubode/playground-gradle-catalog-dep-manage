@@ -1,6 +1,6 @@
 plugins {
     kotlin("multiplatform")
-    kotlin("plugin.serialization") version "1.4.30"
+    alias(libs.plugins.kotlin.plugin.serialization)
 }
 
 kotlin {
@@ -9,30 +9,30 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                implementation(kotlin("stdlib"))
-                implementation("io.ktor:ktor-client")
-                implementation("org.jetbrains.kotlinx:kotlinx-serialization-json")
+                implementation(libs.kotlin.stdlib)
+                implementation(libs.ktor.client)
+                implementation(libs.bundles.kotlinx.serialization)
             }
         }
         val commonTest by getting {
             dependencies {
-                implementation(kotlin("test-common"))
-                implementation(kotlin("test-annotations-common"))
+                implementation(libs.bundles.kotlin.test)
             }
         }
         val jvmMain by getting {
             dependencies {
-                implementation("io.reactivex.rxjava3:rxjava")
+                implementation(libs.rxjava3)
             }
         }
         val jvmTest by getting {
             dependencies {
-                implementation("junit:junit")
+                implementation(libs.junit)
             }
         }
     }
 }
 
 dependencies {
-    commonMainImplementation(platform(project(":platform")))
+    commonMainImplementation(platform(libs.kotlin.bom))
+    commonMainImplementation(platform(libs.ktor.bom))
 }

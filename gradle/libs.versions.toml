@@ -2,7 +2,7 @@
 kotlin = "1.4.30"
 ktor = "1.4.0"
 junit = "4.12"
-kotlinx-serialization = "1.0.1"
+kotlinx-serialization = "1.5.0"
 rxjava3 = "3.0.0"
 
 [libraries]

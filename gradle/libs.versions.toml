@@ -1,5 +1,5 @@
 [versions]
-kotlin = "1.4.30"
+kotlin = "1.8.10"
 ktor = "1.4.0"
 junit = "4.12"
 kotlinx-serialization = "1.0.1"

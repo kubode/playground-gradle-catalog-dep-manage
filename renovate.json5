@@ -11,9 +11,11 @@
         {
             // Grouping Kotlin, KSP and Compose Compiler
             "matchPackagePrefixes": [
-                "org.jetbrains.kotlin",
-                "com.google.devtools.ksp",
-                "androidx.compose.compiler",
+                "org.jetbrains.kotlin:",
+                "androidx.compose.compiler:",
+            ],
+            "matchPackagePatterns": [
+                "^com.google.devtools.ksp",
             ],
             "groupName": "Kotlin, KSP and Compose Compiler",
         },

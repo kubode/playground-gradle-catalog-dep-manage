@@ -7,17 +7,17 @@
     "labels": [
         "dependencies",
     ],
-    "packageRules": [
-        {
-            // Grouping Kotlin, KSP and Compose Compiler
-            "matchPackagePrefixes": [
-                "org.jetbrains.kotlin:",
-                "androidx.compose.compiler:",
-            ],
-            "matchPackagePatterns": [
-                "^com.google.devtools.ksp",
-            ],
-            "groupName": "Kotlin, KSP and Compose Compiler",
-        },
-    ],
+//     "packageRules": [
+//         {
+//             // Grouping Kotlin, KSP and Compose Compiler
+//             "matchPackagePrefixes": [
+//                 "org.jetbrains.kotlin:",
+//                 "androidx.compose.compiler:",
+//             ],
+//             "matchPackagePatterns": [
+//                 "^com.google.devtools.ksp",
+//             ],
+//             "groupName": "Kotlin, KSP and Compose Compiler",
+//         },
+//     ],
 }

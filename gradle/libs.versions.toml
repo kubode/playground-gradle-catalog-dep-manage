@@ -2,29 +2,18 @@
 kotlin = "1.9.10"
 ksp = "1.9.10-1.0.13"
 compose-compiler = "1.5.3"
-ktor = "1.4.0"
-junit = "4.12"
-kotlinx-serialization = "1.0.1"
-rxjava3 = "3.0.0"
 
 [libraries]
 kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
 kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib" }
 kotlin-test-common = { module = "org.jetbrains.kotlin:kotlin-test-common" }
 kotlin-test-annotations-common = { module = "org.jetbrains.kotlin:kotlin-test-annotations-common" }
-ktor-bom = { module = "io.ktor:ktor-bom", version.ref = "ktor" }
-ktor-client = { module = "io.ktor:ktor-client" }
-junit = { module = "junit:junit", version.ref = "junit" }
-kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinx-serialization" }
-rxjava3 = { module = "io.reactivex.rxjava3:rxjava", version.ref = "rxjava3" }
 ksp-gradle-plugin = { module = "com.google.devtools.ksp:symbol-processing-gradle-plugin", version.ref = "ksp" }
 ksp-api = { module = "com.google.devtools.ksp:symbol-processing-api", version.ref = "ksp" }
 androidx-compose-compiler = { module = "androidx.compose.compiler:compiler", version.ref = "compose-compiler" }
 
 [bundles]
-kotlinx-serialization = ["kotlinx-serialization-json"]
 kotlin-test = ["kotlin-test-common", "kotlin-test-annotations-common"]
 
 [plugins]
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
-kotlin-plugin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }

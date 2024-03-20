@@ -1,7 +1,7 @@
 [versions]
-kotlin = "1.9.10"
-ksp = "1.9.10-1.0.13"
-compose-compiler = "1.5.3"
+kotlin = "1.9.23"
+ksp = "1.9.23-1.0.19"
+compose-compiler = "1.5.11"
 
 [libraries]
 kotlin-bom = { module = "org.jetbrains.kotlin:kotlin-bom", version.ref = "kotlin" }
